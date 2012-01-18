@@ -1,0 +1,19 @@
+﻿@model List<string>           
+@{
+    ViewBag.Title = "My Cloudy Album";
+}
+
+<h2>My Cloudy Album</h2>
+
+@foreach (var item in Model) {
+    <img src="@item" width="200" height="100" />
+}
+
+@using (Html.BeginForm("index", "home",  
+    FormMethod.Post, new { enctype = "multipart/form-data" })) {
+    
+    <input type="file" name="fileBase" />
+    <p>
+        <input type="submit" value="Upload" />
+    </p>    
+}
