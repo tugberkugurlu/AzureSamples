@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BlobStorage" generation="1" functional="0" release="0" Id="447fa058-49b1-4ce2-a2da-5661918c3751" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BlobStorage" generation="1" functional="0" release="0" Id="5862b0f6-d81d-4705-98c8-805cd24ebe16" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="BlobStorageGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -79,9 +79,9 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="5aa75bb6-54f7-4dc1-ba8f-663e6a42443d" ref="Microsoft.RedDog.Contract\ServiceContract\BlobStorageContract@ServiceDefinition.build">
+    <implementation Id="05fd440d-73ff-476d-a0db-38846f173576" ref="Microsoft.RedDog.Contract\ServiceContract\BlobStorageContract@ServiceDefinition.build">
       <interfacereferences>
-        <interfaceReference Id="47e4b4a5-e05b-48f6-9b57-b73c38c1f50e" ref="Microsoft.RedDog.Contract\Interface\MvcWebRole1:Endpoint1@ServiceDefinition.build">
+        <interfaceReference Id="fa800bea-b493-4c42-988e-4c6e54f59f0a" ref="Microsoft.RedDog.Contract\Interface\MvcWebRole1:Endpoint1@ServiceDefinition.build">
           <inPort>
             <inPortMoniker name="/BlobStorage/BlobStorageGroup/MvcWebRole1:Endpoint1" />
           </inPort>
