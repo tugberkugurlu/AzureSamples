@@ -20,7 +20,7 @@ namespace ServiceBusSample
 
             if (namespaceManager.QueueExists("TestQueue") == false)
             {
-                namespaceManager.CreateQueue(new QueueDescription("TestQueue")
+                QueueDescription desc = namespaceManager.CreateQueue(new QueueDescription("TestQueue")
                 {
                     LockDuration = TimeSpan.FromMinutes(5)
                 });
